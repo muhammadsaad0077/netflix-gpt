@@ -4,6 +4,7 @@
 - Header
 - Login Form  (use formic library if form is large)
 - Sign up From
+- Login Form validation
 
 # Features
 - Login/Signup Page

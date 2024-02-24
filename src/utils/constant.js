@@ -8,3 +8,7 @@ export const API_Options = {
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2YWE1MjdlYjdjODU0MzNjNmM3NWVjN2UxMDBlOWRmNyIsInN1YiI6IjY1Y2E0MmQwOThmMWYxMDE2MmQ4ODMxMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.KMvBakMFRSMPhiGH7FEyGPKecByLYXUvX66GvniHQjg'
     }
   };
+
+  export const IMG_CDN = "https://image.tmdb.org/t/p/w780"
+
+  export const language = [{identifier: "en", name: "English"}, {identifier: "dutch", name: "Dutch"}, {identifier: "urdu", name: "Urdu"}]

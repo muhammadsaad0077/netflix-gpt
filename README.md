@@ -17,7 +17,12 @@
 - Register TMDB API and get access token
 - Fetched Movie list using tmdb api
 - Update redux store
-- create custom hook
+- create custom hook for now playing moives
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embeded the youtube video and make it autoplay and also mute
+- GPT Page
+- (Feature) Multilingual GPT Page
 
 # Features
 - Login/Signup Page

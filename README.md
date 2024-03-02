@@ -23,6 +23,15 @@
 - Embeded the youtube video and make it autoplay and also mute
 - GPT Page
 - (Feature) Multilingual GPT Page
+- Get OpenAi key
+- GPT Search API Call
+- Fetched GPT Movie Suggestion
+- Created GPT Slice added data
+- Reused MovieList to make movie suggestion container
+- Memoization
+- Added .env file
+- Make our site Responsive
+
 
 # Features
 - Login/Signup Page

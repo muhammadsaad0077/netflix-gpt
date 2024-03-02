@@ -23,8 +23,6 @@ const Login = () => {
   };
 
   const handleData = () => {
-    console.log(email.current.value);
-    console.log(password.current.value);
     const message = checkData(email.current.value, password.current.value);
     seterrorMessage(message);
     if (message) return;
@@ -54,7 +52,6 @@ const Login = () => {
               );
             })
             .catch();
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -70,7 +67,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           const user = userCredential.user;
-          console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -84,13 +80,13 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src={bgimg} alt="bg-img"></img>
+        <img className="h-screen object-cover md:w-screen" src={bgimg} alt="bg-img"></img>
       </div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
         }}
-        className="absolute bg-black opacity-80 w-3/12 p-12 my-36 mx-auto left-0 right-0 text-white rounded-lg"
+        className="absolute bg-black opacity-80 w-full md:w-3/12 p-12 my-36 mx-auto left-0 right-0 text-white rounded-lg"
       >
         <h1 className="font-bold text-3xl py-4">
           {isSignIn ? "Sign In" : "Sign up"}

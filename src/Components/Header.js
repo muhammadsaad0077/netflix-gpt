@@ -42,15 +42,15 @@ const Header = () => {
     return ()=> unsubscribe();
 }, [])
   return (
-    <div className="absolute w-screen bg-gradient-to-b from-black px-8 py-2 z-10 flex justify-between">     
-      <img className="w-44" src={logo} alt='logo'></img>
-      {user && (<div className="flex p-2">
+    <div className="absolute w-screen bg-gradient-to-b from-black px-8 py-2 z-10 flex justify-between flex-col md:flex-row ">       {/* tailwind classes for responsiveness: sm is for small devices(tablet), md is for medium devices(desktop, laptop), by-default classes are used for mobiles/smartphones */}
+      <img className="w-44 mx-auto md:mx-0" src={logo} alt='logo'></img>
+      {user && (<div className="flex p-2 justify-between">
        {showGptSearch && (<select className="p-2 m-2 bg-gray-900 text-white" onChange={handleLanguage}>
           {language.map((lang) => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
         </select>)}
       <button className="py-2 px-4 mx-4 bg-purple-800 my-2 rounded-lg text-white hover:text-white hover:bg-black transition" onClick={handleGptSearch}>{showGptSearch ? "Home" : "GPT Search"}</button>
         <img
-        className="w-12 h-12"
+        className="w-12 h-12 hidden md:block"
        alt='usericon' 
        src={avtimg}
         ></img>

@@ -57,5 +57,3 @@ const GptSearchBarPage = () => {
 
 export default GptSearchBarPage
 
-// open ai key
-// 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

@@ -16,13 +16,4 @@ const SecondaryContainer = () => {
   )
 }
 
-// Popular API
-// https://api.themoviedb.org/3/movie/popular
-
-// Top Rated
-// https://api.themoviedb.org/3/movie/top_rated
-
-// Upcoming
-// https://api.themoviedb.org/3/movie/upcoming
-
 export default SecondaryContainer;

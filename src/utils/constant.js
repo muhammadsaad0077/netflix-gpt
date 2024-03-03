@@ -12,5 +12,3 @@ export const API_Options = {
   export const IMG_CDN = "https://image.tmdb.org/t/p/w780"
 
   export const language = [{identifier: "en", name: "English"}, {identifier: "dutch", name: "Dutch"}, {identifier: "urdu", name: "Urdu"}]
-
-  export const openAI_key = process.env.REACT_APP_TMDB_key;

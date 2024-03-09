@@ -16,4 +16,4 @@ export const API_Options = {
   export const language = [{identifier: "en", name: "English"}, {identifier: "dutch", name: "Dutch"}, {identifier: "urdu", name: "Urdu"}]
 
 
-export const openaikey =  "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"
+

@@ -40,7 +40,7 @@ const Header = () => {
         }
     });
     return ()=> unsubscribe();
-}, [])
+}, [dispatch, navigate])
   return (
     <div className="absolute w-screen bg-gradient-to-b from-black px-8 py-2 z-10 flex justify-between flex-col md:flex-row ">       {/* tailwind classes for responsiveness: sm is for small devices(tablet), md is for medium devices(desktop, laptop), by-default classes are used for mobiles/smartphones */}
       <Link to={"/"}><img className="w-44 mx-auto md:mx-0" src={logo} alt='logo'></img></Link>

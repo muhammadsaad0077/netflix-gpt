@@ -15,13 +15,11 @@ const GptSearchBarPage = () => {
   const searchMovieTMDB = async (movie)=>{
     const data = await fetch("https://api.themoviedb.org/3/search/movie?query="+movie+"&include_adult=false&language=en-US&page=1", API_Options)
     const json = await data.json()
-    console.log(json.results);
     return json.results;
     
   }
 
   const handleGptSearch = async()=>{
-    console.log(searchText.current.value)
     const gptQuery = "Act as a movie recomendation system and suggest some movies for the query : " + 
     ". only gives me names of 5 movies, comma separated like the example given ahead. Example: Don, Dhoom, Sholay, Tiger, Bullet Raja"
 
@@ -32,7 +30,6 @@ const GptSearchBarPage = () => {
 
     if (!gptResults.choices) return null;
   
-  console.log(gptResults.choices?.[0]?.message?.content);
   //
   const gptMovies = gptResults.choices?.[0]?.message?.content.split(",")
 
@@ -41,7 +38,6 @@ const GptSearchBarPage = () => {
   // For each movie I will search TMDB API
   const promiseArray = gptMovies.map(movie => searchMovieTMDB(movie))
   const tmdbResults = await Promise.all(promiseArray)
-  console.log(tmdbResults);
   dispatch(addGptMovieResult({movieNames: gptMovies, movieResults: tmdbResults}))
   }
   

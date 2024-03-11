@@ -1,5 +1,5 @@
 # Steps to Create Netflix_GPT
-- create react app
+- create react app       
 - configure tailwindcss
 - Header
 - Login Form  (use formic library if form is large)
